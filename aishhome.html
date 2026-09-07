@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>AISH - AI Smartwork Hub</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --text-main: #1f2937;
+            --bg-light: #f8fafc;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            color: var(--text-main);
+            background-color: #f1f5f9;
+            line-height: 1.6;
+        }
+        /* 헤더 & 네비게이션 */
+        header {
+            background: white;
+            padding: 1rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        /* 로고 영역 수정 */
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo-img {
+            /* 이미지 높이를 헤더 크기에 맞춰 조정 */
+            height: 45px; 
+            width: auto; /* 비율 유지 */
+            display: block;
+        }
+        nav ul {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: var(--primary);
+        }
+        /* 메인 콘텐츠 */
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 3rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        /* 카드형 리스트 */
+        .values {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .card {
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        .card strong {
+            display: block;
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- 기존 SVG 대신 IMG 태그 사용 -->
+        <a href="#" class="logo">
+            <img src="https://aish-web-v2.web.app/images/logo-aish-transparent.png" alt="AISH 로고" class="logo-img">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">소개</a></li>
+                <li><a href="#">교육 프로그램</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h2>미래를 선도하는 AI 교육 플랫폼</h2>
+            <p>AISH는 체계적인 교육과 실무 중심 연구, 커뮤니티를 통해<br>AI 시대의 인재를 양성합니다.</p>
+        </div>
+
+        <h3>핵심 가치</h3>
+        <div class="values">
+            <div class="card">
+                <strong>체계적 교육</strong>
+                입문부터 실무까지 단계별 커리큘럼
+            </div>
+            <div class="card">
+                <strong>실무 중심</strong>
+                현업 전문가와 함께하는 프로젝트 기반 학습
+            </div>
+            <div class="card">
+                <strong>열린 커뮤니티</strong>
+                함께 성장하는 AI 교육 생태계
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 AISH. All rights reserved.</p>
+        <p>이메일: aismartworkhub@gmail.com</p>
+    </footer>
+</body>
+</html>
